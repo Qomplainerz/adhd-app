@@ -55,7 +55,7 @@ if (analyzeBtn) {
             adhdSubtype = "Predominantly Hyperactive-Impulsive";
         }
         else {
-            adhdSubtype = "No significant ADHD&nbsp;symptoms detected in these areas.";
+            adhdSubtype = "No significant ADHD symptoms detected in these areas.";
         }
 
         // --- OUTPUT AND MODULAR SUGGESTIONS ---
