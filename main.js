@@ -75,7 +75,7 @@ if (analyzeBtn) {
             suggestions.push("Sensory Overload Log", "Impulse Control Module");
         }
 
-        //&nbsp;Render list to the DOM
+        // Render list to the DOM
 
         if (suggestions.length > 0) {
             moduleSuggestions.innerHTML = `
@@ -87,3 +87,4 @@ if (analyzeBtn) {
         }
     });
 }
+
