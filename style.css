@@ -1,0 +1,119 @@
+/* * Companionem Linguae - Style System
+ * Focus: Low Sensory Input (Reizarm) & Ghost Mode Camouflage
+ */
+
+:root {
+    --bg-color: #f4f7f6;
+    --text-color: #2c3e50;
+    --accent-color: #2980b9;
+    --error-color: #e74c3c;
+    --success-color: #27ae60;
+    --card-bg: #ffffff;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Basic Reset & Layout */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    transition: all 0.3s ease; /* Smooth transitions for sensory relief */
+}
+
+header {
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 30px;
+}
+
+.survey-container {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Question Grid */
+.question-grid {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #1f6391;
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ============================================================
+   GHOST MODE: Terminal / Server Monitoring Look
+   ============================================================ */
+
+body.ghost-mode {
+    background-color: #000000 !important;
+    color: #00ff00 !important; /* Classic Matrix/Terminal Green */
+    font-family: 'Courier New', Courier, monospace !important;
+    padding: 10px;
+}
+
+.ghost-mode .survey-container {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 1px solid #00ff00;
+    max-width: 100%;
+}
+
+.ghost-mode h1, .ghost-mode h2, .ghost-mode label {
+    color: #00ff00 !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.ghost-mode select, .ghost-mode button {
+    background: #000 !important;
+    color: #00ff00 !important;
+    border: 1px solid #00ff00 !important;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ghost-mode header {
+    border-bottom: 1px dashed #00ff00;
+}
+
+/* Visual Feedback in Ghost Mode */
+.ghost-mode .result-box {
+    border: 1px solid #00ff00;
+    color: #00ff00 !important;
+}
