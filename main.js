@@ -86,5 +86,13 @@ if (analyzeBtn) {
             moduleSuggestions.innerHTML = "<p>Standard modules enabled.</p>";
         }
     });
-}
 
+    // Quick Ghost Mode Toggle (Press 'G' key)
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key.toLowerCase() === 'g') {
+            document.body.classList.toggle('ghost-mode');
+            console.log("System Monitoring Mode Toggled.");
+        }
+    });
+}
